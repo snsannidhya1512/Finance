@@ -22,6 +22,13 @@
       "when": 1720181766801,
       "tag": "0002_kind_hannibal_king",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1720246253645,
+      "tag": "0003_goofy_mariko_yashida",
+      "breakpoints": true
     }
   ]
 }
