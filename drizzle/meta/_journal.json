@@ -15,6 +15,13 @@
       "when": 1720012084293,
       "tag": "0001_chemical_captain_marvel",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1720181766801,
+      "tag": "0002_kind_hannibal_king",
+      "breakpoints": true
     }
   ]
 }
