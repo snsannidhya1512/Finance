@@ -6,8 +6,8 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { useEffect } from "react";
-import { useNewAccount } from "../hooks/use-new-account";
-import { AccountForm } from "./account-form";
+import { useNewAccount } from "../hooks/use-new-transaction";
+import { AccountForm } from "./transaction-form";
 import { insertAccountSchema } from "../../../db/schema";
 import { z } from "zod";
 
