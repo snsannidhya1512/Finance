@@ -6,10 +6,7 @@ import { DatePicker } from "@/components/date-picker";
 
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import {
-  insertAccountSchema,
-  insertTransactionSchema,
-} from "../../../db/schema";
+import { insertTransactionSchema } from "../../../db/schema";
 import {
   Form,
   FormControl,
