@@ -8,7 +8,7 @@ import {
 import { useEffect } from "react";
 import { useNewTransaction } from "../hooks/use-new-transaction";
 import { z } from "zod";
-import { useCreateTransaction } from "../api/use-create-transaction";
+
 import { insertTransactionSchema } from "../../../db/schema";
 import { useCreateCategory } from "../../categories/api/use-create-category";
 import { useGetCategories } from "../../categories/api/use-get-categories";
@@ -16,6 +16,7 @@ import { useGetAccounts } from "../../accounts/api/use-get-accounts";
 import { useCreateAccount } from "../../accounts/api/use-create-account";
 import { TransactionForm } from "./transaction-form";
 import { Loader2 } from "lucide-react";
+import { useBulkCreateTransactions } from "../api/use-bulk-create-transaction";
 
 const formSchema = insertTransactionSchema.omit({
   id: true,
@@ -25,7 +26,7 @@ type FormValues = z.input<typeof formSchema>;
 
 export const NewTransactionSheet = () => {
   const { isOpen, onClose } = useNewTransaction();
-  const createMutation = useCreateTransaction();
+  const createMutation = useBulkCreateTransactions();
 
   const categoryQuery = useGetCategories();
   const categoryMutation = useCreateCategory();
