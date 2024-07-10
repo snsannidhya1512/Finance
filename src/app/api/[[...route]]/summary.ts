@@ -1,5 +1,5 @@
 import { clerkMiddleware, getAuth } from "@hono/clerk-auth";
-import { zValidator } from "@hono/zod-Validator";
+import { zValidator } from "@hono/zod-validator";
 import { subDays, parse, differenceInDays } from "date-fns";
 import { Hono } from "hono";
 import { z } from "zod";
