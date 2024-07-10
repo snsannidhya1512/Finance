@@ -9,7 +9,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { useNewTransaction } from "../../../../features/transactions/hooks/use-new-transaction";
 import { useGetTransactions } from "../../../../features/transactions/api/use-get-transactions";
 import { useBulkDeleteTransactions } from "../../../../features/transactions/api/use-bulk-delete-transactions";
-import { useBulkCreateTransactions } from "../../../../features/transactions/api/use-bulk-create-transaction";
+import { useBulkCreateTransactions } from "../../../../features/transactions/api/use-create-transaction";
 import { useState } from "react";
 import { UploadButton } from "./upload-button";
 import { ImportCard } from "./import-card";

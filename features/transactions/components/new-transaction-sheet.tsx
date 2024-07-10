@@ -16,7 +16,7 @@ import { useGetAccounts } from "../../accounts/api/use-get-accounts";
 import { useCreateAccount } from "../../accounts/api/use-create-account";
 import { TransactionForm } from "./transaction-form";
 import { Loader2 } from "lucide-react";
-import { useBulkCreateTransactions } from "../api/use-bulk-create-transaction";
+import { useBulkCreateTransactions } from "../api/use-create-transaction";
 
 const formSchema = insertTransactionSchema.omit({
   id: true,
