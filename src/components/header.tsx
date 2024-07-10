@@ -34,6 +34,7 @@ import { HeaderLogo } from "./header-logo";
 import { Navigation } from "./navigation";
 import { Loader2 } from "lucide-react";
 import { WelcomeMsg } from "./welcome-msg";
+import { Filters } from "./filters";
 
 export const Header = () => {
   return (
@@ -54,14 +55,7 @@ export const Header = () => {
           </div>
         </div>
         <WelcomeMsg />
-      </div>
-      <div className="flex lg:hidden absolute top-4 right-4">
-        <ClerkLoaded>
-          <UserButton afterSignOutUrl="/" />
-        </ClerkLoaded>
-        <ClerkLoading>
-          <Loader2 className="size-8 animate-spin text-slate-400" />
-        </ClerkLoading>
+        <Filters />
       </div>
     </header>
   );
